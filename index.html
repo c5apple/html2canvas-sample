@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>html2canvas sample</title>
+
+  <style>
+    #input {
+      padding: 10px;
+      background: #f5da55;
+    }
+
+    #input h4 {
+      color: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="input">
+    <h4>Hello world!</h4>
+    <textarea placeholder="placeholderはキャプチャされないが、入力すると..."></textarea>
+  </div>
+
+  <p><button id="capture">CAPTURE</button></p>
+
+  <div id="output"></div>
+
+  <script src="../node_modules/html2canvas/dist/html2canvas.min.js"></script>
+  <script src="main.js" defer></script>
+</body>
+
+</html>
